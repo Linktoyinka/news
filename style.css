@@ -217,11 +217,18 @@ p.details {
         width: 45%;
         margin-top: 2%;
     }    
+    h1 {
+        font-size: 55px;
+    }
 }
 
 @media screen and (max-width: 847px) {
     .blog-card {
         width: 49%;
+    }
+
+    h1 {
+        font-size: 53px;
     }
     
     .yes-mobile {
@@ -234,9 +241,9 @@ p.details {
 }
 
 @media screen and (max-width: 650px) {
-    
-    .yes-mobile {
-        /* height: auto; */
+
+    h1 {
+        font-size: 50px;
     }
 
     .hero {
@@ -260,4 +267,23 @@ p.details {
     .blog {
         margin-top: 7%;
     }
+
+    h1 {
+        font-size: 43px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hero .left .bottom {
+        flex-wrap: wrap;
+    }
+
+    .first, .second {
+        width: 100%;
+    }
+
+    .second {
+        display: block;
+    }
+    
 }
