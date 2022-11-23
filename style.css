@@ -127,12 +127,16 @@ hr {
     width: 53%;
 }
 
-.left .bottom .second {
+.second {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     width: 47%;
     height: 90%;
+}
+
+.second p {
+    color: var(--Dark-grayish-blue);
 }
 
 button {
@@ -146,4 +150,56 @@ button {
     font-weight: 700;
     cursor: pointer;
 
+}
+
+.blog {
+    margin-top: 4%;
+    margin-bottom: 4%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-card {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    gap: 3%;
+}
+
+.blog-img {
+    width: 30%;
+}
+
+.blog-img img {
+    width: 100%;
+}
+
+.content {
+    width: 80%;
+}
+
+p.tag {
+    color: var(--Grayish-blue);
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.content h3 {
+    font-size: 19px;
+    font-weight: 800;
+    margin: 7px 0;
+}
+
+p.details {
+    line-height: 20px;
+    /* font-weight: 600; */
+    color: var(--Dark-grayish-blue);
+}
+
+.blog-card a {
+    color: var(--Very-dark-blue);
+}
+
+.blog-card a:hover {
+    color: var(--soft-red);
 }
