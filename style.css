@@ -232,3 +232,32 @@ p.details {
         display: none;
     }
 }
+
+@media screen and (max-width: 650px) {
+    
+    .yes-mobile {
+        /* height: auto; */
+    }
+
+    .hero {
+        flex-wrap: wrap;
+    }
+
+    .hero .left, .hero .right {
+        width: 100%;
+    }
+
+    .hero .right {
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 573px) {
+    
+    .blog-card {
+        width: 100%;
+    }
+    .blog {
+        margin-top: 7%;
+    }
+}
