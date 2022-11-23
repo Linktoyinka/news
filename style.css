@@ -68,6 +68,7 @@ nav li {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    gap: 2%;
 }
 
 .hero .right {
@@ -84,6 +85,7 @@ nav li {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 3%;
 }
 
 .hero a {
@@ -124,7 +126,7 @@ hr {
 }
 
 .first {
-    width: 53%;
+    width: 50%;
 }
 
 .second {
@@ -132,7 +134,7 @@ hr {
     justify-content: space-between;
     flex-direction: column;
     width: 47%;
-    height: 90%;
+    height: 100%;
 }
 
 .second p {
@@ -196,7 +198,6 @@ p.tag {
 
 p.details {
     line-height: 20px;
-    /* font-weight: 600; */
     color: var(--Dark-grayish-blue);
 }
 
@@ -218,7 +219,7 @@ p.details {
         margin-top: 2%;
     }    
     h1 {
-        font-size: 55px;
+        font-size: 53px;
     }
 }
 
@@ -228,7 +229,7 @@ p.details {
     }
 
     h1 {
-        font-size: 53px;
+        font-size: 50px;
     }
     
     .yes-mobile {
@@ -240,10 +241,16 @@ p.details {
     }
 }
 
+@media screen and (max-width: 712px) {
+    nav {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 650px) {
 
     h1 {
-        font-size: 50px;
+        font-size: 47px;
     }
 
     .hero {
@@ -285,10 +292,23 @@ p.details {
     .second {
         display: block;
     }
+
+    h1 {
+        font-size: 39px;
+    }
     
 }
 
+@media screen and (max-width: 435px) {
+    .hero .right {
+        margin-top: 15%;
+    }
+}
+
 @media screen and (max-width: 400px) {
+    .hero .right {
+        margin-top: 15%;
+    }
     h1 {
         font-size: 35px;
         line-height: 40px;
@@ -310,4 +330,10 @@ p.details {
         font-size: 14px;
     }
     
+}
+
+@media screen and (max-width: 353px) {
+    .hero .right {
+        margin-top: 25%;
+    }
 }
