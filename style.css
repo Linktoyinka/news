@@ -287,3 +287,27 @@ p.details {
     }
     
 }
+
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .blog-card {
+        margin-top: 20px;
+    }
+
+    p.tag {
+        font-size: 19px;
+    }
+
+    .blog-card .content h3 {
+        font-size: 17px;
+    }
+
+    p.details {
+        font-size: 14px;
+    }
+    
+}
