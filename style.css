@@ -75,6 +75,8 @@ a:hover, a:active {
     border: none;
 }
 
+
+
 .hamburger .bar, .hamburger::after, .hamburger::before {
     width: inherit;
     height: 5px;
@@ -318,6 +320,18 @@ p.details {
     .mobile-nav {
         display: block;
     }
+
+    header {
+        padding: 0 10%;
+        margin: 0;
+        position: fixed;
+        top: 0;
+        background-color: var(--Off-white);
+        width: 100%;
+        z-index: ;
+    }
+
+    
 }
 
 @media screen and (max-width: 650px) {
