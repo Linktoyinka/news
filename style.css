@@ -58,10 +58,75 @@ a:hover, a:active {
     color: var(--soft-red);
 }
 
-nav li {
+.nav-menu li {
     list-style: none;
     display: inline-block;
     margin: 0 0 0 40px;
+}
+
+.hamburger {
+    position: relative;
+    display: none;
+    width: 35px;
+    cursor: pointer;
+    appearance: none;
+    outline: none;
+    background: none;
+    border: none;
+}
+
+.hamburger .bar, .hamburger::after, .hamburger::before {
+    width: inherit;
+    height: 5px;
+    background-color: var(--soft-red);
+    margin: 6px 0;
+    transition: 0.4s;
+    content: '';
+    display: block;
+}
+
+.hamburger.is-active::before {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.hamburger.is-active::after {
+    transform: rotate(45deg) translate(-9px, -6px);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+.mobile-nav {
+    width: 80%;
+    height: 100vh;
+    background-color: var(--Off-white);
+    padding: 15px;
+    direction: rtl;
+    position: fixed;
+    top: 0;
+    right: 100%;
+    opacity: 92%;
+    padding-top: 90px;
+    transition: 0.4s;
+
+    display: none;
+}
+
+.mobile-nav.is-active {
+    right: 0;
+}
+
+.mobile-nav li {
+    list-style: none;
+    margin: 20px;
+    
+}
+
+.mobile-nav a {
+    font-weight: 700;
+    color: var(--soft-red);
+    font-size: 15px;
 }
 
 .hero {
@@ -242,8 +307,16 @@ p.details {
 }
 
 @media screen and (max-width: 712px) {
-    nav {
+    .nav-menu {
         display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .mobile-nav {
+        display: block;
     }
 }
 
